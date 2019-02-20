@@ -1,0 +1,38 @@
+{
+	/* See all the pre-defined configs here: https://www.npmjs.com/package/eslint-config-defaults */
+	"extends": "defaults/configurations/eslint",
+	"parser": "babel-eslint",
+	"ecmaFeatures": {
+		"jsx": true
+	},
+	"env": {
+		"amd": true,
+		"browser": true,
+		"jquery": true,
+		"node": true,
+		"es6": true,
+		"worker": true
+	},
+	"rules": {
+
+		"quotes": [
+			"error",
+			"single"
+		],
+		"eqeqeq": 2,
+		"comma-dangle": 1,
+		"no-console": 0,
+		"no-debugger": 1,
+		"no-extra-semi": 1,
+		"no-extra-parens": 1,
+		"no-irregular-whitespace": 0,
+		"no-undef": 0,
+		"no-unused-vars": 0,
+		"semi": 1,
+		"semi-spacing": 1,
+		"valid-jsdoc": [
+			2,
+			{ "requireReturn": false }
+		]
+	}
+}

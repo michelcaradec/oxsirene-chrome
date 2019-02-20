@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- jQuery -->
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <!-- jQueryUI -->
+    <script src="libs/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="libs/jquery-ui.min.css">
+    <!-- Intro.js -->
+    <script src="libs/intro.min.js"></script>
+    <link rel="stylesheet" href="libs/introjs.min.css">
+
+    <style>
+        body {
+            width: 350px;
+            height: 300px;
+        }
+
+        .button {
+            height: 30px;
+        }
+
+        .input {
+            height: 30px;
+            font-size: 20px;
+        }
+
+        .map {
+            width: 303px;
+            height: 200px;
+            border: 2px groove gray;
+            background: #ccc;
+            text-align: center;
+            line-height: 300px;
+        }
+
+        .sellerFirst {
+            font-size: larger;
+            line-height: 1.2;
+        }
+
+        .seller {
+            line-height: 1.2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="tabs" width="100%">
+        <ul>
+            <li><a href="#tabs-1">Destinataire</a></li>
+            <li><a href="#tabs-2">...</a></li>
+            <li><a href="#tabs-3">Revendeur(s)</a></li>
+        </ul>
+        <div id="tabs-1">
+            <div>
+                <input id="locationInput" class="input" size="33" title="Saisissez le lieu de livraison puis tapez sur la touche [Entrée] ou cliquez sur le bouton à droite de la zone de saisie." placeholder="Lieu de livraison">
+                <button id="checkLocation" class="button" title="Cliquez pour vérifier le lieu de livraison."></button>
+                <button id="runEstimate" class="button" title="Cliquez pour lancer l'estimation."></button>
+                <button id="showHelp" class="button" title="Cliquez pour afficher l'aide."></button>
+            </div>
+            <div id="message">
+                <!--User messages will go here.-->
+            </div>
+            <div id="open-street-map">
+                <!--Open Street Map will go here.-->
+            </div>
+        </div>
+        <div id="tabs-2">
+            <div id="progressbar"></div>
+            <ul id="estimate-steps">
+                <!--Estimation steps will go here-->
+            </ul>
+        </div>
+        <div id="tabs-3">
+            <div id="delivery-estimate">
+                <!--Delivery estimation will go here.-->
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/global.js"></script>
+    <script src="scripts/config.js"></script>
+    <script src="scripts/session.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/token.js"></script>
+    <script src="scripts/identifier.js"></script>
+    <script src="scripts/location.js"></script>
+    <script src="scripts/estimate.js"></script>
+    <script src="scripts/onboarding.js"></script>
+    <script src="scripts/popup.js"></script>
+</body>
+
+</html>

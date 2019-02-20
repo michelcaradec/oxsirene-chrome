@@ -1,2 +1,6 @@
 # Personal notes
-_NOTEPAD.md
+_*.md
+
+# Working folders
+/dependencies
+/ui_ux

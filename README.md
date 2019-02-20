@@ -1,6 +1,8 @@
 # OxSirene Chrome
 
-<!-- TODO : lien vers wiki -->
+OxSirene Chrome et [OxSirene Server](https://github.com/michelcaradec/oxsirene-server) sont des composants du projet **OxSirene**, dont l'objectif est de faciliter l'identification des revendeurs d'une place de marché les plus proches de chez vous.
+
+Plus d'informations sur le [Wiki](https://github.com/michelcaradec/oxsirene-chrome/wiki).
 
 ## Licence
 
